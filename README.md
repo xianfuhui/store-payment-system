@@ -17,7 +17,7 @@ The system aims to provide a convenient and modern retail experience while impro
 - Node.js
 
 ### Frontend
-- EJS Template Engine
+- EJS 
 - HTML
 - CSS
 - JavaScript
