@@ -23,7 +23,7 @@ The system aims to provide a convenient and modern retail experience while impro
 - JavaScript
 
 ### Database
-- MongoDB (NoSQL) 
+- MongoDB  
 
 ---
 
