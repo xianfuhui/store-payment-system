@@ -1,7 +1,7 @@
 
 # Mobile Retail Store Application
 
-## 1. Introduction
+## Introduction
 
 In today's digital era, technology plays a crucial role in improving shopping experiences. Consumers increasingly prefer convenient online platforms when purchasing technology products, especially mobile phones.
 
@@ -11,79 +11,55 @@ The system aims to provide a convenient and modern retail experience while impro
 
 ---
 
-## 2. Technologies Used
+## Technologies Used
 
 ### Backend
 - Node.js
-- Express.js
-- JSON Web Token (JWT)
-- Mongoose
 
 ### Frontend
+- EJS Template Engine
 - HTML
 - CSS
 - JavaScript
-- EJS Template Engine
 
 ### Database
-- MongoDB (NoSQL)
-
-### Main Libraries
-
-- ejs ^3.1.9  
-- express ^4.18.2  
-- express-flash ^0.0.2  
-- express-session ^1.17.3  
-- jsonwebtoken ^9.0.2  
-- mongoose ^8.0.1  
-- multer ^1.4.5-lts.1  
-- nodemailer ^6.9.7  
-- path ^0.12.7  
-- pdfkit ^0.14.0  
+- MongoDB (NoSQL) 
 
 ---
 
-## 3. System Design
-
-### Class Diagram
-![Class Diagram](./README_images/class-diagram.png)
+## Features
 
 ### Use Case Diagram
-![Usecase Diagram](./README_images/usecase-diagram.png)
-
-### Sequence Diagram
-![Sequence Diagram](./README_images/sequence-diagram.png)
+![Usecase Diagram](docs/images/usecase-diagram.png)
 
 ### Functional Decomposition Diagram
-![Functional Decomposition](./README_images/function-diagram.png)
+![Functional Decomposition](docs/images/function-diagram.png)
 
 ---
 
-## 4. System Overview
+## Screenshots
 
-### Project Structure
+### Admin Login
+![Admin Login](docs/images/admin-login.png)
 
-Main directories of the application:
+### Admin Profile
+![Admin Profile](docs/images/admin-profile.png)
 
-- **.env** – Contains environment configuration variables.
-- **app.js** – Main entry file responsible for initializing and running the application.
-- **package.json** – Contains project dependencies and configuration information.
-- **config/** – Database configuration files.
-- **node_modules/** – Stores installed Node.js dependencies.
-- **src/** – Contains the main source code of the system following the MVC architecture.
+### Staff Management
+![Staff List](docs/images/staff-list.png)
 
-Subdirectories inside **src/**:
+### Product Management
+![Product List](docs/images/product-list.png)
 
-- **controllers/** – Handle requests from users and communicate with models and views.
-- **middleware/** – Provide middleware functions for request processing and authentication.
-- **models/** – Define database models used by the application.
-- **public/** – Store static resources such as images, CSS, and JavaScript files.
-- **routes/** – Define application routing logic.
-- **views/** – User interface templates rendered by the server.
+### Cart
+![Cart](docs/images/cart.png)
+
+### Payment
+![Payment](docs/images/payment.png)
 
 ---
 
-## 5. Deployment
+## Setup
 
 ### Step 1: Create GitHub Repository
 
@@ -127,28 +103,6 @@ Example configuration:
 After deployment, access the system via:
 
 https://paymentshop-app.onrender.com/
-
----
-
-## 6. Application Screenshots
-
-### Admin Login
-![Admin Login](./README_images/admin-login.png)
-
-### Admin Profile
-![Admin Profile](./README_images/admin-profile.png)
-
-### Staff Management
-![Staff List](./README_images/staff-list.png)
-
-### Product Management
-![Product List](./README_images/product-list.png)
-
-### Cart
-![Cart](./README_images/cart.png)
-
-### Payment
-![Payment](./README_images/payment.png)
 
 ---
 
