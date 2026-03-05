@@ -1,5 +1,5 @@
 
-# Mobile Retail Store Application
+# Store Payment System
 
 ## Introduction
 
