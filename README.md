@@ -1,190 +1,159 @@
-<a name="_toc153737871"></a>**1. INTRODUCTION** 
 
-In today's world, technology is becoming increasingly important and consumers are looking for convenience when shopping for technology products, especially mobile phones. That's why our mobile retail store has introduced an advanced app developed with Node.js, which helps create a unique and convenient shopping experience for customers. The smart search feature makes it easy for customers to choose the right phone for their individual needs. From the latest models to exclusive products that are only available on our store website, the app offers great variety and choice.
+# Mobile Retail Store Application
 
-<a name="_toc153737872"></a>**2. TECHNOLOGY USED IN APPLICATION**
+## 1. Introduction
 
-Technology used:
+In today's digital era, technology plays a crucial role in improving shopping experiences. Consumers increasingly prefer convenient online platforms when purchasing technology products, especially mobile phones.
 
-- **Fronted:** Use HTML, CSS, and JavaScript.
-- **Backend**: Use a programming language Node.js uses frameworks stored in package.json .
+This application was developed using Node.js to provide an efficient and user-friendly system for managing and purchasing mobile devices. The platform allows users to easily search, explore, and select phones based on their individual needs. It supports a wide range of products, including the latest models and exclusive devices available through the store.
 
-**"ejs": "^3.1.9",**	
+The system aims to provide a convenient and modern retail experience while improving product management and customer interaction.
 
-**"express": "^4.18.2",**
+---
 
-**"express-flash": "^0.0.2",**
+## 2. Technologies Used
 
-**"express-session": "^1.17.3",**
+### Backend
+- Node.js
+- Express.js
+- JSON Web Token (JWT)
+- Mongoose
 
-**"jsonwebtoken": "^9.0.2",**
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- EJS Template Engine
 
-**"mongoose": "^8.0.1",**
+### Database
+- MongoDB (NoSQL)
 
-**"multer": "^1.4.5-lts.1",**
+### Main Libraries
 
-**"nodemailer": "^6.9.7",**
+- ejs ^3.1.9  
+- express ^4.18.2  
+- express-flash ^0.0.2  
+- express-session ^1.17.3  
+- jsonwebtoken ^9.0.2  
+- mongoose ^8.0.1  
+- multer ^1.4.5-lts.1  
+- nodemailer ^6.9.7  
+- path ^0.12.7  
+- pdfkit ^0.14.0  
 
-**"path": "^0.12.7",**
+---
 
-**"pdfkit": "^0.14.0"**
+## 3. System Design
 
-- **Database**: Using a NoSQL database (MongoDB) for storage 
+### Class Diagram
+![Class Diagram](./README_images/class-diagram.png)
 
-<a name="_toc153737873"></a>**3. DESIGN ANALYSIS**
+### Use Case Diagram
+![Usecase Diagram](./README_images/usecase-diagram.png)
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.001.png)
+### Sequence Diagram
+![Sequence Diagram](./README_images/sequence-diagram.png)
 
-<a name="_toc153737886"></a>**Figure 3.1.1 Class diagram**
+### Functional Decomposition Diagram
+![Functional Decomposition](./README_images/function-diagram.png)
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.002.png)
+---
 
-<a name="_toc153737887"></a>**Figure 3.1.2 Usecase diagram**
+## 4. System Overview
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.003.png)
+### Project Structure
 
-<a name="_toc153737888"></a>**Figure 3.1.3 Sequence diagram**
+Main directories of the application:
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.004.png)
+- **.env** – Contains environment configuration variables.
+- **app.js** – Main entry file responsible for initializing and running the application.
+- **package.json** – Contains project dependencies and configuration information.
+- **config/** – Database configuration files.
+- **node_modules/** – Stores installed Node.js dependencies.
+- **src/** – Contains the main source code of the system following the MVC architecture.
 
-<a name="_toc14970"></a><a name="_toc153737889"></a>**Figure 3.1.4:  Functional decomposition diagram**
+Subdirectories inside **src/**:
 
-<a name="_toc153737880"></a>**4. DEMO**
+- **controllers/** – Handle requests from users and communicate with models and views.
+- **middleware/** – Provide middleware functions for request processing and authentication.
+- **models/** – Define database models used by the application.
+- **public/** – Store static resources such as images, CSS, and JavaScript files.
+- **routes/** – Define application routing logic.
+- **views/** – User interface templates rendered by the server.
 
-**4.1 Directory structure**
+---
 
-- **env :** contains the path to the environment in which the product is run
-- **App.js :** is an important file, responsible for connecting everything so that the application can run correctly. 
-- **package. json:** The package.json file contains crucial information and configurations related to the development, packaging, and deployment processes. 
-- **config:** db.js(database) container
-- **node\_modules:** This is a  directory in the my NodeJS project . It contains the NodeJS modules used in the project. These modules are libraries or tools required for the project to run
-- **src:** This is a directory in the NodeJS project typically contains the source code files of the application following **MVC model** . It's where you organize your code and assets for my application. Let's break down the likely content of each subdirectory:
-  - **Controllers:** Get created to execute requests from users, receive parameters, call functions in the model, load the necessary views
-  - **Middleware:** Provides services from the operating system side to applications, making it possible for applications to interact with components allowed by the operating system.
-  - **models:** Contains all files that define the models of the application
-  - **public:** Contains static files, such as images, CSS files, JavaScript files, …  or other static resources to serve directly to the client from the web server.
-  - **routes:** Contains files that define routes for the application.
-  - **views:** Contains files that define the user interface using the template engine
+## 5. Deployment
 
-<a name="_toc23423"></a><a name="_toc153737881"></a>**4.2 Deploy application**
+### Step 1: Create GitHub Repository
 
-Deploy steps by steps:
+Create a repository and push the source code to GitHub.
 
-**Step 1:** Create reponsitory on Github: paymentshop-app. Then push the code to Github: <https://github.com/xianfuhui/paymentshop-app>
+Repository link:  
+https://github.com/xianfuhui/paymentshop-app
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.005.png)
+---
 
-<a name="_toc8414"></a><a name="_toc153737890"></a>**Figure 3.3.1: Creating repository**
+### Step 2: Configure MongoDB Atlas
 
-**Step 2:** Create MongoDB Atlas and write the information in .env file of the source code
+Create a MongoDB Atlas cluster and update the connection string inside the `.env` file.
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.006.png)
+Example:
 
-<a name="_toc761"></a><a name="_toc153737891"></a>**Figure 3.3.2: Creating MongoDB Atlas**
+MONGO_URI=your_mongodb_connection_string
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.007.png)
+---
 
-<a name="_toc26944"></a><a name="_toc153737892"></a>**Figure 3.3.3 Update .env file**
+### Step 3: Deploy using Render
 
-**Step 3:** Use <https://render.com/> to deploy code
+1. Go to https://render.com/
+2. Select **Deploy a Web Service**
+3. Connect the GitHub repository
+4. Configure the deployment settings
 
-- Connect to code packaged on GitHub in previous step
+Example configuration:
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.008.png)
+- Name: paymentshop-app  
+- Region: Oregon (US West)  
+- Branch: main  
+- Runtime: Node  
+- Build Command: yarn  
+- Start Command: npm start  
 
-<a name="_toc27477"></a><a name="_toc153737893"></a>**Figure 3.3.4: Reponsitory connection**
+---
 
-- Detail configuration settings: 
-  - **Name:** paymentshop-app
-  - **Region:** Oregon (US West)
-  - **Branch:** main
-  - **Root Directory:** “.”
-  - **Runtime:** Node 
-  - **Build Command:** yarn
-  - **Start Command:** npm start
+### Step 4: Access the Application
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.009.png)
+After deployment, access the system via:
 
-<a name="_toc30277"></a><a name="_toc153737894"></a>**Figure 3.3.5: Details Configuration Settings for Render**
+https://paymentshop-app.onrender.com/
 
-- The display screen has been successfully deployed
+---
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.010.png)
+## 6. Application Screenshots
 
-<a name="_toc21020"></a><a name="_toc153737895"></a>**Figure 3.3.6: Logs success notification**
+### Admin Login
+![Admin Login](./README_images/admin-login.png)
 
-**Step 4:** Check result at https://paymentshop-app.onrender.com/
+### Admin Profile
+![Admin Profile](./README_images/admin-profile.png)
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.011.png)
+### Staff Management
+![Staff List](./README_images/staff-list.png)
 
-<a name="_toc153737896"></a>**Figure 3.3.7 Application after deploy successfully**
+### Product Management
+![Product List](./README_images/product-list.png)
 
-<a name="_toc28240"></a><a name="_toc153737882"></a>**4.3 Application overview**
+### Cart
+![Cart](./README_images/cart.png)
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.012.png)
+### Payment
+![Payment](./README_images/payment.png)
 
-<a name="_toc2900"></a><a name="_toc153737897"></a>**Figure 3.4.1: Login interface for Admin** 
+---
 
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.013.png)
+## Author
 
-<a name="_toc27908"></a><a name="_toc153737898"></a>**Figure 3.4.2: Profile admin page** 
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.014.png)
-
-<a name="_toc13553"></a><a name="_toc153737899"></a>**Figure 3.4.3: Change password page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.015.png)
-
-<a name="_toc6303"></a><a name="_toc153737900"></a>**Figure 3.4.4: Register for account staff page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.016.png)
-
-<a name="_toc153737901"></a>**Figure 3.4.5 List of staffs page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.017.png)
-
-<a name="_toc153737902"></a>**Figure 3.4.6 View staff details page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.018.png)
-
-<a name="_toc153737903"></a>**Figure 3.4.7 List of product page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.019.png)
-
-<a name="_toc153737904"></a>**Figure 3.4.8 Add product page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.020.png)
-
-<a name="_toc153737905"></a>**Figure 3.4.9 Edit product page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.021.png)
-
-<a name="_toc153737906"></a>**Figure 3.4.10 Analysis reports page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.022.png)
-
-<a name="_toc153737907"></a>**Figure 3.4.11 Staff login page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.023.png)
-
-<a name="_toc153737908"></a>**Figure 3.4.12 Profile staff page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.024.png)
-
-<a name="_toc153737909"></a>**Figure 3.4.13 List customer page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.025.png)
-
-<a name="_toc153737910"></a>**Figure 3.4.14 Customer details page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.026.png)
-
-<a name="_toc153737911"></a>**Figure 3.4.15 List product page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.027.png)
-
-<a name="_toc153737912"></a>**Figure 3.4.16 Cart page**
-
-![](./README_images/Aspose.Words.ec70593d-d589-42fe-af58-27550c12d34d.028.png)
-
-<a name="_toc153737913"></a>**Figure 3.4.17 Payment page**
+Name: Tien Phu Huy  
+Email: tphuyvvk@gmail.com  
+GitHub: https://github.com/xianfuhui
